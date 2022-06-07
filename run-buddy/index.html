@@ -3,17 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title>RUN BUDDY</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
     <header>
-        <h1>RUN BUDDY</h1>
+        <h1>
+            <a href="/">RUN BUDDY</a>
+        </h1>
+        <nav>
+        <!-- Unordered List Element-->
+            <ul>
+            <!-- List Item Element -->
+                <li>
+                <!-- Anchor Element -->
+                    <a href="#what-we-do">What We Do</a>
+                </li>
+                <li>
+                    <a href="#what-you-do">What you Do</a>
+                </li>
+                <li>
+                    <a ref="#your-trainers">Your Trainers</a>
+                </li>
+                <li>
+                    <a href="#reach-out">Reach Out</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Hero/Jumbotron -->
-    <section>
+        <!-- Sign Up Form Section -->
+    <section class="hero">
+        <div>
+            <h3>Get Started Today</h3>
+            <p>Fill out this form and one of our trainers will schedule a consult</p>
 
+        <!-- Add Form Element-->
+        <form>
+            <label for="name">Enter full name:</label>
+            <input type="text" placeholder="Your Name" name="name" id="name" />
+
+            <label for="email">Enter email address:</label>
+            <input type="email" placeholder="Email Address" name="email" id="email" />
+
+            <label for="phone number">Enter a telephone number:</label>
+            <input type="tel" placeholder="Phone Number" name="phone" id="Phone" />
+
+            <p>
+                Have you worked out with a trainer before?
+                <input type="radio" name="trainer-confirm" id="trainer-yes"/>
+                <label for="trainer-yes">Yes</label>
+
+                <input type="radio" name="trainer-confirm" id="trainer-no"/>
+                <label for="trainer-no">No</label>
+            </p>
+
+            <p>
+                <label for="checkbox">
+                    I acknowledge that I am at least 18 years of age.
+                </label>
+                <input type="checkbox" name="age-confirm" id="checkbox"/>
+            </p>
+
+            <button type="submit">
+                Get Running!
+            </button>
+        </form>
+        </div>
     </section>
+    <!-- End Hero Form -->
 
     <!-- What We Do Section -->
     <section>
@@ -38,6 +96,10 @@
     <!-- Footer -->
     <footer>
         <h2>Made with Love by Run Buddy</h2>
+    <div>
+        <a href="#">Read Our Privacy Policy</a><br />
+        &copy; 2019 Run Buddy, Inc.
+    </div>
     </footer>
 </body>
 </html>
